@@ -27,7 +27,9 @@ def give_reading():
         print("Please type either 'y' or 'n'.")
         return give_reading()
 
-print(give_reading())    
+print(give_reading())   
+
+# Create dictionary of tarot cards
 
 # Make past_reading function
 
