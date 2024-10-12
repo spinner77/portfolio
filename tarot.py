@@ -32,7 +32,8 @@ def give_reading():
             print("Sorry, I didn't understand that response. Please enter 'y' or 'n'.")
 
 if give_reading():
-    print("Here is your reading for today.")
+    user_name = input("What is your name? ")
+    print(f"Thankyou {user_name}, here is your personalised tarot reading.")
 else:
     sys.exit(1)  
 
@@ -139,5 +140,6 @@ def print_meanings(past_card, present_card, future_card):
 # Draw cards and print their meanings
 past_card, present_card, future_card = draw_cards(tarot_cards)
 print_meanings(past_card, present_card, future_card)
-    
-# Give farewell message
+
+print()    
+print(f"Take care {user_name}, and remember this program is for entertainment purposes only.  The readings provided are not a substitute for professional advice and should not be used as such. The information presented in this program is not intended to diagnose, treat, or cure any medical, psychological, or financial conditions. Please use your own discretion when interpreting the cards and their meanings. The creator and contributors of this program are not responsible for any actions taken based on the information provided in the readings. By using this program, you agree to take full responsibility for your own decisions and actions.\n")
